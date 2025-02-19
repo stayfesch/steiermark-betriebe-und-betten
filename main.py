@@ -130,7 +130,6 @@ data_list = []
 for gem_key, gem_name in municipality_map.items():
     data_list.append(getData(gem_key, FROM_YEAR, UNTIL_YEAR, SAISON_WINTER, includeBetriebe=True, includeBetten=False))
     data_list.append(getData(gem_key, FROM_YEAR, UNTIL_YEAR, SAISON_SUMMER, includeBetriebe=True, includeBetten=False))
-print(data_list)
 exportCSV(data_list, "betriebe.csv")
 
 data_list = []
